@@ -1,2 +1,2 @@
-# -
+# AutoCreateWechatSSUrl
 自动将保存的微信截图上传至SMMS图床，并将图片URL复制到剪贴板
