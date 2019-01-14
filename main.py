@@ -1,3 +1,4 @@
+
 # -- coding: utf-8 --
 import requests
 import sys
@@ -48,10 +49,12 @@ if __name__ == "__main__":
                         format='%(asctime)s - %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S')
     path = 'D:\sub_photo'
+    print('当前使用的微信截图路径为： ' + path)
     event_handler = FileEventHandler()
     observer = Observer()
     observer.schedule(event_handler, path, recursive=True)
     observer.start()
+    print("···············开始检测···············")
     try:
         while True:
             time.sleep(1)
